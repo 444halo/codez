@@ -1,12 +1,19 @@
+.video-grid {
+  display: grid;
+  flex: 1;
+  grid-auto-rows: 129px;
+}
+
 .video {
+  cursor: pointer;
   border-radius: 20px;
+  padding: 8px 0px;
   display: grid;
   overflow: hidden;
   justify-content: center;
   align-items: start;
-  height: 113px;
-  flex: 1;
-  min-width: 505px;
+  height: 129px;
+  min-width: 599px;
   grid-template-columns: 36px 210px 1fr 40px;
   grid-auto-rows: 1fr;
   grid-template-areas:
