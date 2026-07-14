@@ -18,7 +18,8 @@
 
 .info,
 .info2,
-.info4 {
+.info4,
+.info5 {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -31,6 +32,10 @@
 
 .info4 {
   align-items: end;
+}
+
+.info5 {
+  margin-bottom: 16px;
 }
 
 p {
@@ -57,7 +62,7 @@ p {
 .ytThumbnailOverlayButtonViewModelButton,
 .ytThumbnailOverlayButtonViewModelButtonBottomEndPosition {
   position: absolute;
-  bottom: -4px;
+  bottom: -20px;
   right: -16px;
   transform: translate(-50%, -50%);
 }
@@ -136,4 +141,32 @@ button {
   background-attachment: fixed;
   background-position: right top;
   transform: scale(1.05);
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 176px;
+  border-radius: 8px;
+  width: 100%;
+  background-color: rgba(0,0,0,0.6);
+  opacity: 0;
+  cursor: pointer;
+}
+
+.info5:hover .image-overlay {
+  opacity: 1;
+  transition-duration: 0.25s;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, .2);
+  transition-duration: 0.1s;
+}
+
+.ytSpecButtonShapeNextHost2:hover,
+.ytSpecButtonShapeNextHost3:hover {
+  background-color: rgba(230, 230, 230);
+  transition-duration: 0.1s;
 }

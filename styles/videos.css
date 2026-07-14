@@ -1,11 +1,12 @@
 .video-grid {
   display: grid;
   grid-auto-rows: 129px;
+  overflow: auto;
 }
 
 .video {
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: 12px;
   padding: 8px 0px;
   display: grid;
   overflow: hidden;
@@ -80,4 +81,16 @@
 .yt-icon-button {
   position: relative;
   right: 6px;
+}
+
+:hover {
+  transition-duration: 0.1s;
+}
+
+.video:hover {
+  background-color: rgba(39, 39, 39);
+}
+
+.vid-user2:hover {
+  color: white;
 }
