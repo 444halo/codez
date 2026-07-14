@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(15, 15, 15);
+
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: start;
+  grid-template-columns: 360px 1fr;
+  grid-template-areas:
+    "BIG1 BIG3"
+    "BIG1 BIG2";
+}

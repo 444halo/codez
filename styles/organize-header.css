@@ -1,0 +1,27 @@
+.manual {
+  width: 86.484px;
+  height: 32px;
+  background-color: rgb(39, 39, 39);
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  font-family: roboto, arial, sans-serif;
+}
+
+.v-arrow {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-right: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  transform: rotate(45deg);
+  margin-left: 5px;
+  margin-bottom: 2px;
+}
+
+.organize-header {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: 36px;
+  padding-top: 12px;
+}
