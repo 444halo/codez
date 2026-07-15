@@ -20,6 +20,15 @@
     "box-6 box-7 box-8 box-9";
 }
 
+.lines {
+  color: white;
+  width: 24px;
+  height: 24px;
+  display: block;
+  fill: currentColor;
+  background-color: rgb(15,15,15);
+}
+
 .vid-thumbnail {
   width: 200px;
   height: 113px;
@@ -70,25 +79,19 @@
   padding: 2px 6px;
 }
 
-.style-scope {
-  background-color: rgba(15, 15, 15);
-  width: 24px;
-  height: 24px;
-  display: block;
-  color: white;
-}
-
 .yt-icon-button {
   position: relative;
   right: 6px;
 }
 
-:hover {
+.video:hover {
+  background-color: rgba(39, 39, 39);
   transition-duration: 0.1s;
 }
 
-.video:hover {
+.video:hover .lines {
   background-color: rgba(39, 39, 39);
+  transition-duration: 0.1s;
 }
 
 .vid-user2:hover {
