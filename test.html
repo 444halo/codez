@@ -6,32 +6,36 @@
         background-color: rgb(157, 209, 209);
       }
 
-      .play-all-button {
+      .files {
         height: 40px;
-        width: 120px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 6px;
-        background-color: rgb(255, 255, 255);
-        border-radius: 20px;
+        width: 40px;
       }
 
-      .play-all-triangle {
+      .files-button {
+        border: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        fill: currentColor;
+        place-items: center;
+        border-radius: 20px;
+        background-color: black;
+      }
+
+      .files2 {
         width: 24px;
         height: 24px;
+        color: white;
       }
 
     </style>
   </head>
   <body>
-    <div class="play-all-button">
-      <div class="play-all-triangle">
-        <svg viewBox="0 0 24 24">
-          <path d="M5 4.623V19.38a1.5 1.5 0 002.26 1.29L22 12 7.26 3.33A1.5 1.5 0 005 4.623Z"></path>
-        </svg>
-      </div>
-      <div><p class="play-all">Play all</p></div>
-    </div>
+    <div class="files">
+      <button class="files-button">
+        <div class="files2">
+          <svg viewBox="0 0 24 24">
+            <path d="M15.293 3.293 4.96 13.626c-.22.219-.385.488-.484.782l-1.924 5.778-.633 1.897 1.897-.633 5.777-1.927a2 2 0 00.78-.482l9.334-9.334 1-1a3.83 3.83 0 00-5.414-5.414Zm4 1.414a1.83 1.83 0 010 2.586L19 7.586 16.414 5l.293-.293a1.83 1.83 0 012.586 0ZM6.374 15.04 15 6.414 17.586 9 8.96 17.626 5.08 18.92l1.294-3.88Z"></path></svg></div></span></span></div>
   </body>
 </html>

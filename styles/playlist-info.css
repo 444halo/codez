@@ -55,47 +55,6 @@ p {
   height: 176px;
 }
 
-.ytFlexibleActionsViewModelAction {
-  height: 40px;
-}
-
-.ytThumbnailOverlayButtonViewModelButton,
-.ytThumbnailOverlayButtonViewModelButtonBottomEndPosition {
-  position: absolute;
-  bottom: -20px;
-  right: -16px;
-  transform: translate(-50%, -50%);
-}
-
-.ytSpecButtonShapeNextHost2 {
-  background-color: white;
-  color: black;
-}
-
-.ytSpecButtonShapeNextIcon {
-  position: relative;
-  height: 24px;
-  width: 24px;
-  left: 2px;
-}
-
-.ytSpecButtonShapeNextHost3 {
-  background-color: white;
-  color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  border-radius: 20px;
-  font-family: roboto, arial, sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  margin: 0;
-  text-decoration: none;
-  height: 40px;
-  width: 120px;
-}
-
 .title {
   font-size: 28px;
   font-weight: 700;
@@ -187,7 +146,7 @@ button:hover {
   transition-duration: 0.1s;
 }
 
-.ytSpecButtonShapeNextHost2:hover {
+.files-button:hover {
   background-color: rgba(230, 230, 230);
   transition-duration: 0.1s;
 }
@@ -219,4 +178,79 @@ button:hover {
 .play-all-button:hover {
   background-color: rgba(230, 230, 230);
   transition-duration: 0.1s;
+}
+
+.add-videos,
+.edit-playlist,
+.share,
+.more,
+.files {
+  height: 40px;
+  width: 40px;
+}
+
+.add-videos-button,
+.edit-playlist-button,
+.share-button,
+.more-button,
+.files-button {
+  padding: 0;
+  display: block;
+  fill: currentColor;
+  place-items: center;
+}
+
+.add-videos2,
+.edit-playlist2,
+.share2,
+.more2,
+.files2 {
+  width: 24px;
+  height: 24px;
+  color: white;
+}
+
+.files {
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+}
+
+.files-button {
+  background-color: white;
+}
+
+.files2 {
+  fill: black;
+}
+
+.tooltip {
+  visibility: hidden;
+  position: absolute;
+  bottom: -150%;
+  left: 50%;
+  translate: -50% -50%;
+  width: max-content;
+  padding: 9px 8px;
+  background-color: rgba(91, 92, 92);
+  border-radius: 4px;
+  opacity: 0;
+}
+
+.tooltip-text {
+  color: white;
+}
+
+.add-videos-button:hover .tooltip,
+.edit-playlist-button:hover .tooltip,
+.share-button:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  transition-duration: 0.4s;
+}
+
+.add-videos-button,
+.edit-playlist-button,
+.share-button {
+  position: relative;
 }
