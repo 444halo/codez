@@ -2,32 +2,36 @@
 <html>
   <head>
     <style>
-      .three-dots-button {
-        color: white;
-        width: 40px;
+      body {
+        background-color: rgb(157, 209, 209);
+      }
+
+      .play-all-button {
         height: 40px;
-        display: block;
-        fill: currentColor;
-        background-color: rgb(15,15,15);
-        border: 0;
+        width: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        background-color: rgb(255, 255, 255);
         border-radius: 20px;
       }
 
-      .three-dots {
-        height: 24px;
+      .play-all-triangle {
         width: 24px;
-        place-self: center;
+        height: 24px;
       }
 
-      .three-dots-button:hover {
-        background-color: rgb(39,39,39);
-      }
     </style>
   </head>
   <body>
-      <button class="three-dots-button">
-            <div class="three-dots">
-              <svg viewBox="0 0 24 24">
-                <path d="M12 4a2 2 0 100 4 2 2 0 000-4Zm0 6a2 2 0 100 4 2 2 0 000-4Zm0 6a2 2 0 100 4 2 2 0 000-4Z"></path></svg></div></button>
+    <div class="play-all-button">
+      <div class="play-all-triangle">
+        <svg viewBox="0 0 24 24">
+          <path d="M5 4.623V19.38a1.5 1.5 0 002.26 1.29L22 12 7.26 3.33A1.5 1.5 0 005 4.623Z"></path>
+        </svg>
+      </div>
+      <div><p class="play-all">Play all</p></div>
+    </div>
   </body>
 </html>

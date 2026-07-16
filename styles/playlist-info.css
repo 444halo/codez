@@ -150,9 +150,31 @@ button {
   height: 176px;
   border-radius: 8px;
   width: 100%;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
   cursor: pointer;
+  transition-duration: .25s;
+}
+
+.play-all-overlay {
+  height: 176px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border-radius: 8px;
+}
+
+.play-all-triangle2 {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+.play-all2 {
+  color: white;
+  font-size: 14px;
 }
 
 .info5:hover .image-overlay {
@@ -165,8 +187,36 @@ button:hover {
   transition-duration: 0.1s;
 }
 
-.ytSpecButtonShapeNextHost2:hover,
-.ytSpecButtonShapeNextHost3:hover {
+.ytSpecButtonShapeNextHost2:hover {
+  background-color: rgba(230, 230, 230);
+  transition-duration: 0.1s;
+}
+
+
+.play-all-button {
+  height: 40px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.play-all-triangle {
+  width: 24px;
+  height: 24px;
+}
+
+.play-all {
+  color: black;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.play-all-button:hover {
   background-color: rgba(230, 230, 230);
   transition-duration: 0.1s;
 }
