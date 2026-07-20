@@ -1,6 +1,5 @@
 .video-grid {
   display: grid;
-  grid-auto-rows: 129px;
   overflow: auto;
 }
 
@@ -9,7 +8,6 @@
   border-radius: 12px;
   padding: 8px 0px;
   display: grid;
-  overflow: hidden;
   justify-content: center;
   align-items: start;
   height: 129px;
@@ -96,6 +94,7 @@
 
 .vid-user2:hover {
   color: white;
+  position: relative;
 }
 
 .three-dots-button {
@@ -118,4 +117,54 @@
 .video:hover .three-dots-button {
   background-color: rgba(39, 39, 39);
   transition-duration: 0.1s;
+}
+
+.vid-user2:hover::after {
+  content: attr(user);
+  background-color: rgba(91, 92, 92, 0.8);
+  color: white;
+  position: absolute;
+  top: -39px;
+  left: 50%;
+  padding: 9px 8px;
+  border-radius: 4px;
+  translate: -50% -50%;
+  width: max-content;
+  z-index: 10;
+}
+
+.user-link {
+  color: rgb(170, 170, 170);
+}
+
+.video-link {
+  width: 100%;
+  height: 100%;
+}
+
+a,
+a.active {
+  text-decoration: none;
+}
+
+.video-link::after {
+  content: '';
+  inset: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.vid-info3 {
+  position: relative;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+}
+
+.vid-user2 {
+  z-index: 100;
+}
+
+.user-link {
+  z-index: 100;
 }

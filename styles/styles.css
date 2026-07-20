@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+p {
+  color: rgb(170, 170, 170);
+  font-family: roboto, arial, sans-serif;
+  font-size: 12px;
+  margin: 0;
+}
+
 ::-webkit-scrollbar {
   width: 0;
 }
@@ -20,6 +27,5 @@ body {
   justify-content: start;
   grid-template-columns: 360px 1fr;
   grid-template-areas:
-    "BIG1 BIG3"
     "BIG1 BIG2";
 }

@@ -38,13 +38,6 @@
   margin-bottom: 16px;
 }
 
-p {
-  color: rgb(170, 170, 170);
-  font-family: roboto, arial, sans-serif;
-  font-size: 12px;
-  margin: 0;
-}
-
 .playlist-pic {
   align-self: flex-start;
   display: block;

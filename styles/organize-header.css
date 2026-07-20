@@ -20,7 +20,12 @@
 }
 
 .organize-header {
-  margin-top: 12px;
-  margin-bottom: 12px;
-  margin-left: 36px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 36px;
+  height: 56px;
+  position: sticky;
+  top: -12px;
+  background-color: rgb(15, 15, 15);
+  z-index: 5;
 }
