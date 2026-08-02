@@ -120,6 +120,12 @@
 }
 
 .vid-user2:hover::after {
+  opacity: 1;
+}
+
+.vid-user2::after {
+  transition-duration: .4s;
+  opacity: 0;
   content: attr(user);
   background-color: rgba(91, 92, 92, 0.8);
   color: white;
@@ -147,24 +153,16 @@ a.active {
   text-decoration: none;
 }
 
-.video-link::after {
+/* .video-link::before {
   content: '';
   inset: 0;
   position: absolute;
   z-index: 0;
-}
+} */
 
 .vid-info3 {
   position: relative;
   display: grid;
   grid-auto-columns: 1fr;
   grid-auto-rows: 1fr;
-}
-
-.vid-user2 {
-  z-index: 100;
-}
-
-.user-link {
-  z-index: 100;
 }

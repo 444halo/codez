@@ -1,41 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/videos.css">
+
     <style>
-      body {
-        background-color: rgb(157, 209, 209);
-      }
-
-      .files {
-        height: 40px;
-        width: 40px;
-      }
-
-      .files-button {
-        border: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-        display: block;
-        fill: currentColor;
-        place-items: center;
-        border-radius: 20px;
-        background-color: black;
-      }
-
-      .files2 {
-        width: 24px;
-        height: 24px;
-        color: white;
-      }
-
+      
     </style>
   </head>
   <body>
-    <div class="files">
-      <button class="files-button">
-        <div class="files2">
-          <svg viewBox="0 0 24 24">
-            <path d="M15.293 3.293 4.96 13.626c-.22.219-.385.488-.484.782l-1.924 5.778-.633 1.897 1.897-.633 5.777-1.927a2 2 0 00.78-.482l9.334-9.334 1-1a3.83 3.83 0 00-5.414-5.414Zm4 1.414a1.83 1.83 0 010 2.586L19 7.586 16.414 5l.293-.293a1.83 1.83 0 012.586 0ZM6.374 15.04 15 6.414 17.586 9 8.96 17.626 5.08 18.92l1.294-3.88Z"></path></svg></div></span></span></div>
+    <div class="video">
+      <div class="vid-info1" style="grid-area: box-6;">
+        <div class="lines"><svg viewBox="0 0 24 24"><path d="M20 7H4a1 1 0 000 2h16a1 1 0 100-2Zm0 8H4a1 1 0 000 2h16a1 1 0 000-2Z"></path></svg></div>
+      </div>
+      <div class="vid-info2" style="grid-area: box-7;">
+        <a href="https://www.youtube.com/watch?v=9dKSf8IlXNM&list=PLM3cLa2z125PGl2BFmtpUhKQWWxj-aFSo&index=2" class="video-link">
+        <img class="vid-thumbnail" src="thumbnails/hqdefault.jpg">
+        <div class="vid-time"><p class="vid-time2">34:58</p></div>
+        <div></div>
+        </a>
+      </div>
+      <div class="vid-info3" style="grid-area: box-8;">
+        <div><p class="vid-title">Breakcore mix to dissociate</p></div>
+        <div><p class="vid-user"><a href="https://www.youtube.com/channel/UChdsQjbq6SXK7xgT-rC-Vkg" class="user-link"><span class="vid-user2" user="nakedleisure">nakedleisure</span></a> &bull; 3.4M views &bull; 2 years ago</p></div>
+        <a class="video-link" href="https://www.youtube.com/watch?v=9dKSf8IlXNM&list=PLM3cLa2z125PGl2BFmtpUhKQWWxj-aFSo&index=2"></a>
+      </div>
+      <div class="vid-info1" style="grid-area: box-9;">
+        <button class="three-dots-button">
+          <div class="three-dots">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 4a2 2 0 100 4 2 2 0 000-4Zm0 6a2 2 0 100 4 2 2 0 000-4Zm0 6a2 2 0 100 4 2 2 0 000-4Z"></path>
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
   </body>
 </html>
