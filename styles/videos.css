@@ -1,6 +1,7 @@
 .video-grid {
   display: grid;
   overflow: auto;
+  padding: 0px 4px;
 }
 
 .video {
@@ -112,6 +113,7 @@
   height: 24px;
   width: 24px;
   place-self: center;
+  cursor: pointer;
 }
 
 .video:hover .three-dots-button {

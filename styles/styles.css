@@ -29,3 +29,28 @@ body {
   grid-template-areas:
     "BIG1 BIG2";
 }
+
+@media (max-width:1080px) {
+  body {
+    grid-template-areas:
+    "BIG1 BIG1"
+    "BIG2 BIG2";
+  }
+
+  .playlist-info {
+    min-height: auto;
+    height: 288px;
+    width: 100%;
+    grid-template-columns: 428px 428px;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "box-1 box-2 box-2"
+    "box-1 box-3 box-4"
+    "box-1 box-5 box-5";
+    border-radius: 0px;
+  }
+
+  .playlist-pic {
+    height: 240px;
+  }
+}
