@@ -206,7 +206,7 @@ button:hover {
 .files {
   position: absolute;
   right: 4px;
-  bottom: 4px;
+  bottom: 20px;
 }
 
 .files-button {
@@ -245,5 +245,9 @@ button:hover {
 .add-videos-button,
 .edit-playlist-button,
 .share-button {
+  position: relative;
+}
+
+.pic-container {
   position: relative;
 }

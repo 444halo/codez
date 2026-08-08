@@ -145,10 +145,10 @@
   color: rgb(170, 170, 170);
 }
 
-.video-link {
+/* .video-link {
   width: 100%;
   height: 100%;
-}
+} */
 
 a,
 a.active {
@@ -161,10 +161,3 @@ a.active {
   position: absolute;
   z-index: 0;
 } */
-
-.vid-info3 {
-  position: relative;
-  display: grid;
-  grid-auto-columns: 1fr;
-  grid-auto-rows: 1fr;
-}
