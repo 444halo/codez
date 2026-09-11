@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/videos.css">
+    <link rel="stylesheet" href="styles/organize-header.css">
+    <link rel="stylesheet" href="styles/playlist-info.css">
+
+    <style>
+      .dropdown {
+        position: relative;
+      }
+
+      .manual-grid {
+        display: grid;
+        align-items: center;
+        width: max-content;
+        height: max-content;
+        grid-auto-rows: 40px;
+        border-radius: 12px;
+        padding: 2px 16px;
+        background-color: rgb(40,40,40);
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+      }
+
+      p {
+        color: white;
+        font-weight: 500;
+        font-size: 14px;
+        font-family: roboto,arial,sans-serif;
+      }
+
+      .dropdown:active .manual-grid {
+        opacity: 1;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="dropdown">
+      <div class="organize-header">
+        <button class="manual">Manual <span class="v-arrow"></span></button>
+      </div>
+      <div class="manual-grid">
+        <p>Manual</p>
+        <p>Date added (newest)</p>
+        <p>Date added (oldest)</p>
+        <p>Most popular</p>
+        <p>Date published (newest)</p>
+        <p>Date published (oldest)</p>
+      </div>
+    </div>
+  </body>
+</html>
